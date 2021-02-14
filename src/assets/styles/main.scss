@@ -1,1 +1,53 @@
+//  Qvant styles
+@import '~@qvant/qui/dist/qui.css';
 
+header {
+  border-bottom: 1px solid #cecece;
+
+  h1 {
+    text-align: center;
+  }
+}
+
+.upload--field {
+  display: flex;
+  min-height: 400px;
+  margin-top: 50px;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid #cecece;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.preview--list {
+  max-height: 150px;
+  height: 100%;
+  display: flex;
+  flex-wrap: nowrap;
+  list-style: none;
+  overflow-x: auto;
+  overflow-y: hidden;
+  margin: 25px 0;
+  padding: 10px 0;
+  border-top: 1px solid #cecece;
+  border-bottom: 1px solid #cecece;
+
+  >.preview--item {
+    height: 100%;
+    margin: 0 10px;
+
+    &-default {
+      margin: auto;
+    }
+
+    >div {
+      height: 100%;
+
+      >img {
+        height: 100px;
+        vertical-align: bottom;
+      }
+    }
+  }
+}
