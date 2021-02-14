@@ -3,6 +3,11 @@ import VueRouter from 'vue-router'
 Vue.use(VueRouter)
 
 const routes = [
+  {
+    path: '/',
+    name: 'FileUploader',
+    component: () => import('@/views/FileUploader'),
+  },
 ]
 
 const router = new VueRouter({
