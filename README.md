@@ -1,4 +1,4 @@
-# img-uploader
+# File-uploader
 
 ## Project setup
 ```
